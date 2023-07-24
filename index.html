@@ -19,6 +19,13 @@
         <h1>Ghost Sounds</h1>
         <p>Drag and drop the ghosts to see what they sound like!</p>
     </header>
+
+    <audio id="background-music" autoplay loop>
+        <source src="audio/backmusic.mp3" type="audio/mpeg">
+        <source src="audio/backmusic.mp3" type="audio/ogg">
+        <source src="audio/backmusic.mp3" type="audio/mp3">
+    </audio>
+
     <section class="music-board full-width-grid">
         <div class="box-background dropzones">
                 <div class="drop-zone gd"></div>
@@ -29,10 +36,10 @@
         
     </section>
         <section class="ghost-box">
-            <img src="img/ghost-dance.gif" class="ghost-gif" alt="gif of ghost dancing">
-            <img src="img/ghost-laugh.gif" class="ghost-gif" alt="gif of ghost laughing">
-            <img src="img/ghost-mad.gif" class="ghost-gif" alt="gif of mad ghost">
-            <img src="img/ghost-spin.gif" class="ghost-gif" alt="gif of ghost spinning">
+            <img src="img/ghost-dance.gif" class="ghost-gif" data-audio="audio/cute.mp3" alt="gif of ghost dancing">
+            <img src="img/ghost-laugh.gif" class="ghost-gif" data-audio="audio/Laugh.mp3" alt="gif of ghost laughing">
+            <img src="img/ghost-mad.gif" class="ghost-gif" data-audio="audio/angryboo.mp3" alt="gif of mad ghost">
+            <img src="img/ghost-spin.gif" class="ghost-gif" data-audio="audio/spin.mp3" alt="gif of ghost spinning">
         </section>
     </main>
     <footer>
