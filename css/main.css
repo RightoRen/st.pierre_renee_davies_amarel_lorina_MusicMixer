@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: white;
+    background-color: rgb(2, 1, 1);
     margin: 0 auto;
     padding: 0 auto;
     font-family: 'Courier New', Courier, monospace;
@@ -20,14 +20,15 @@ h2, h3, h4 {
 .box {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .box-background {
-    height: 768px;
-    width: 1366px;
+    height: 401px;
+    width: 960px;
     background-image: url(../img/bg-image.jpg);
     background-repeat: no-repeat;
-    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .foot-box {
