@@ -16,3 +16,20 @@ h2, h3, h4 {
     text-decoration: none;
     text-align: center;
 }
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-background {
+    height: 768px;
+    width: 1366px;
+    background-image: url(../img/bg-image.jpg);
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+}
+
+.foot-box {
+    display: block;
+}
