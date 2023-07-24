@@ -8,16 +8,16 @@ body {
     padding: 0 auto;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.5em;
-    color: black;
+    color: white;
 }
 
-h2, h3, h4 {
-    font-size: 24px;
+h1,h2, h3, h4, p {
+    font-size: 26px;
     text-decoration: none;
     text-align: center;
 }
 
-.box {
+.music-board {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -28,9 +28,63 @@ h2, h3, h4 {
     width: 960px;
     background-image: url(../img/bg-image.jpg);
     background-repeat: no-repeat;
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .foot-box {
     display: block;
 }
+
+.ghost-box {
+    text-align: center;
+	display: flex;
+	flex-direction: row;
+    justify-content: center;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+footer nav {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dropzones {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.drop-zone {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 248px;
+    width: 15%;
+	height: 35%;
+	border: thin dashed white;
+	position: relative;
+}
+
+.drop-zone .gd {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.drop-zone img {
+	padding: 0;
+	position: absolute;
+}
+
+.music-board {
+    display: flex;
+	flex-direction: row;
+    justify-content: baseline;
+}
+
+.gd {right: 0;}
+.gl {bottom: 0;}
+.gs {right: 0;}
+.gm {bottom: 0;}
