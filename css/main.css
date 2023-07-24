@@ -17,7 +17,7 @@ h1,h2, h3, h4, p {
     text-align: center;
 }
 
-.box {
+.music-board {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -88,4 +88,3 @@ footer nav {
 .gl {bottom: 0;}
 .gs {right: 0;}
 .gm {bottom: 0;}
-}
