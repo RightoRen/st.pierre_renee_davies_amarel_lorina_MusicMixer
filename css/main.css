@@ -1,46 +1,90 @@
-/* 
-    CSS Guide 
-
-    1. General Styles (Normalize)
-    2. CSS Styles
-
-*/
-
-/* 1. ---General Styles--- */
+.hidden {
+    display: none;
+}
 
 body {
-    margin: 0px;
-    padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    
+    background-color: rgb(2, 1, 1);
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    color: white;
 }
 
-img, embed, object, video, picture {
-    max-width: 100%;
-}
-
-p, h1, h2, h3, h4, h5 {
-    margin: 0px;
-    padding: 0px;
-
-}
-
-a {
+h1,h2, h3, h4, p {
+    font-size: 26px;
     text-decoration: none;
+    text-align: center;
 }
 
-input, textarea {
+.music-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box-background {
+    height: 401px;
+    width: 960px;
+    background-image: url(../img/bg-image.jpg);
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.foot-box {
     display: block;
-    margin: 0px;
-    padding: 0px;
 }
 
- /* ---End of General Styles--- */
-
- /* 2. ---Start of CSS Styles--- */
-
-p, h2 {
-    font-family: 'Henny Penny', cursive;
-    font-size: 25px;
+.ghost-box {
+    text-align: center;
+	display: flex;
+	flex-direction: row;
+    justify-content: center;
+	max-width: 900px;
+	margin: 0 auto;
 }
 
+footer nav {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dropzones {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.drop-zone {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 248px;
+    width: 15%;
+	height: 35%;
+	border: thin dashed white;
+	position: relative;
+}
+
+.drop-zone .gd {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.drop-zone img {
+	padding: 0;
+	position: absolute;
+}
+
+.music-board {
+    display: flex;
+	flex-direction: row;
+    justify-content: baseline;
+}
+
+.gd {right: 0;}
+.gl {bottom: 0;}
+.gs {right: 0;}
+.gm {bottom: 0;}
