@@ -16,31 +16,32 @@
 
 <body>
     <header>
-        <h1 class="hidden">Music Maker</h1>
+        <h1>Ghost Sounds</h1>
+        <p>Drag and drop the ghosts to see what they sound like!</p>
     </header>
-    <section class="box full-width-grid">
-        <div class="box-background"></div>
-
-        <section>
-        <section class="box">
-            <img src="img/ghost-dance.gif" alt="gif of ghost dancing">
-       
+    <section class="music-board full-width-grid">
+        <div class="box-background dropzones">
+                <div class="drop-zone gd"></div>
+                <div class="drop-zone gl"></div>
+                <div class="drop-zone gm"></div>
+                <div class="drop-zone gs"></div>
+        </div>
         
-            <img src="img/ghost-happy.gif" alt="gif of ghost smiling">
-      
-            <img src="img/ghost-laugh.gif" alt="gif of ghost laughing">
-        
-            <img src="img/ghost-mad.gif" alt="gif of mad ghost">
-        
-            <img src="img/ghost-spin.gif" alt="gif of ghost spinning">
+    </section>
+        <section class="ghost-box">
+            <img src="img/ghost-dance.gif" class="ghost-gif" alt="gif of ghost dancing">
+            <img src="img/ghost-laugh.gif" class="ghost-gif" alt="gif of ghost laughing">
+            <img src="img/ghost-mad.gif" class="ghost-gif" alt="gif of mad ghost">
+            <img src="img/ghost-spin.gif" class="ghost-gif" alt="gif of ghost spinning">
         </section>
     </main>
     <footer>
-        <section class="foot-box">
-            <i class="fa-solid fa-play fa-lg"></i>
+        <p>Click the buttons to stop the music</p>
+            <nav id="buttons">
+                <i class="fa-solid fa-play fa-lg"></i>
                 <i class="fa-solid fa-pause fa-lg"></i>
                 <i class="fa-solid fa-volume-xmark fa-lg"></i>
-        </section>
+            </nav>
     </footer>
     <script src="./js/main.js"></script>
 </body>
