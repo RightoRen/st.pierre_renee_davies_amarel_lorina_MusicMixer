@@ -42,6 +42,7 @@ function handleDrop(e) {
     let ghost = document.createElement("audio");
     ghost.src = audioSrc;
     ghost.volume = 0.3;
+    ghost.loop = "true";
     ghost.load();
     ghost.addEventListener("ended", () => ghost.remove());
     document.body.appendChild(ghost);
