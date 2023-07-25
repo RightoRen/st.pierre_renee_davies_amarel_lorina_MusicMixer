@@ -12,18 +12,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Risque&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="bg-img-container">
     <header>
-        <h1>Ghost Sounds Music Maker</h1>
+        <h1>Ghost Sounds</h1>
         <p>Drag and drop the ghosts to see what they sound like!</p>
     </header>
+    <audio id="background-music" autoplay loop>
+        <source src="audio/backmusic.mp3" type="audio/mpeg">
+        <source src="audio/backmusic.mp3" type="audio/ogg">
+        <source src="audio/backmusic.mp3" type="audio/mp3">
+    </audio>
     <section class="music-board full-width-grid">
         <div class="box-background dropzones">
                 <div class="drop-zone gd"></div>
@@ -34,25 +34,20 @@
         
     </section>
         <section class="ghost-box">
-            <section id="ghosts">  
-            <img src="img/ghost-dance.gif" class="ghost-gif" alt="gif of ghost dancing">
-            <img src="img/ghost-laugh.gif" class="ghost-gif" alt="gif of ghost laughing">
-            <img src="img/ghost-mad.gif" class="ghost-gif" alt="gif of mad ghost">
-            <img src="img/ghost-spin.gif" class="ghost-gif" alt="gif of ghost spinning">
-        </section>
+            <img src="img/ghost-dance.gif" class="ghost-gif" data-audio="audio/cute.mp3" alt="gif of ghost dancing">
+            <img src="img/ghost-laugh.gif" class="ghost-gif" data-audio="audio/Laugh.mp3" alt="gif of ghost laughing">
+            <img src="img/ghost-mad.gif" class="ghost-gif" data-audio="audio/angryboo.mp3" alt="gif of mad ghost">
+            <img src="img/ghost-spin.gif" class="ghost-gif" data-audio="audio/spin.mp3" alt="gif of ghost spinning">
         </section>
     </main>
-
-    <footer class="footer">
-        <p>Click the buttons to control the music</p>
+    <footer>
+        <p>Click the buttons to stop the music</p>
             <nav id="buttons">
-                <img id="play" src="img/play-button.png" alt="play button">
-                <img id="pause" src="img/pause-button.png" alt="pause button">
-                <img id="mute" src="img/mute-button.png" alt="mute button">
-                <img id="reset" src="img/reset-button.png" alt="reset button">
+                <i class="fa-solid fa-play fa-lg"></i>
+                <i class="fa-solid fa-pause fa-lg"></i>
+                <i class="fa-solid fa-volume-xmark fa-lg"></i>
             </nav>
     </footer>
-</div>
     <script src="./js/main.js"></script>
 </body>
 </html>
