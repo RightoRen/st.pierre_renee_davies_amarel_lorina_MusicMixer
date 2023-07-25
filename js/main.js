@@ -2,7 +2,10 @@ console.log("Javascript is connected");
 
 
 const backgroundMusic = document.getElementById("background-music");
-const playButton = document.getElementById("play-button");
+const playButton = document.getElementById("play");
+const pauseButton = document.getElementById("pause");
+const muteButton = document.getElementById("mute");
+const resetButton = document.getElementById("reset");
 const theButtons = document.querySelectorAll("#buttons img"),
     musicBoard = document.querySelector(".music-board");
     ghostBox = document.querySelectorAll(".ghost-box img"),
@@ -11,11 +14,33 @@ const theButtons = document.querySelectorAll("#buttons img"),
 
     let draggedPiece;
 
-    
+
 function playBackgroundMusic() {
     backgroundMusic.play();
 }
-    
+
+function pauseBackgroundMusic() {
+    backgroundMusic.pause();
+}
+
+function toggleMuteBackgroundMusic() {
+    backgroundMusic.muted = !backgroundMusic.muted;
+}
+
+function unmuteBackgroundMusic() {
+    backgroundMusic.muted = false;
+}
+
+function resetBackgroundMusic() {
+    backgroundMusic.currentTime = 0;
+}
+
+function resetGhostsToOriginalPositions() {
+    ghostBox.forEach((ghost) => {
+      ghost.style.transform = "translate(0, 0)"; // Reset the transform to its original position (0, 0)
+    });
+  }
+
 function handleStartDrag() {
     draggedPiece = this;
 }
@@ -41,15 +66,13 @@ function handleDrop(e) {
     // Create and play sounds
     let ghost = document.createElement("audio");
     ghost.src = audioSrc;
-    ghost.volume = 0.3;
+    ghost.volume = 0.4;
     ghost.loop = "true";
     ghost.load();
     ghost.addEventListener("ended", () => ghost.remove());
     document.body.appendChild(ghost);
     ghost.play();
 }
-
-
 
 
 theButtons.forEach(button => button.addEventListener("click", play));
@@ -62,5 +85,12 @@ dropZones.forEach(zone => zone.addEventListener("drop", handleDrop));
 
 playButton.addEventListener("click", playBackgroundMusic);
 
+pauseButton.addEventListener("click", pauseBackgroundMusic);
 
+muteButton.addEventListener("click", toggleMuteBackgroundMusic);
+
+resetButton.addEventListener("click", () => {
+    resetBackgroundMusic();
+    resetGhostsToOriginalPositions();
+  });
 
