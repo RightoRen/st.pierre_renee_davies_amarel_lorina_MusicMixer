@@ -27,6 +27,7 @@ h1 {
     padding: 35px;
     padding-bottom: 10px;
     margin: 0;
+    text-shadow: rgba(115, 21, 192, 0.925) 1px 0 10px;
 }
 
 h1,h2, h3, h4, p {
@@ -43,16 +44,15 @@ p {
 /* BG IMAGE STYLES */
 
 .bg-img-container {
-    background-image: url('../img/texture-bg.png');
+    background-image: url('../img/texturebg.png');
     width: 100%;
-    height: 100%;
+    height: 1020px;
     background-size: cover;
     background-position: center;
 
 }
 
 .music-board {
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -66,11 +66,18 @@ p {
     margin-bottom: 20px;
     box-shadow: 0 3px 10px rgba(255, 255, 255, 0.2);
     margin: 0 auto;
+    border-left: solid white 3px;
+    border-right: solid white 3px;
+    border-top: solid white 3px;
 }
 
 /* BG IMAGE STYLES ENDS */
 
 /* GHOST ZONE STYLES */
+
+.ghost-hover {
+    cursor: pointer;
+}
 
 .ghost-box {
     text-align: center;
@@ -81,13 +88,10 @@ p {
 	margin: 0 auto;
     background-color: #c990b0;
     box-shadow: 0 3px 10px rgba(255, 255, 255, 0.2);
-}
+    border-left: solid white 3px;
+    border-right: solid white 3px;
 
-footer nav {
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    min-height: 150px;
 }
 
 .dropzones {
@@ -119,7 +123,6 @@ footer nav {
 .music-board {
     display: flex;
 	flex-direction: row;
-    justify-content: baseline;
 }
 
 .gd {right: 0;}
@@ -140,6 +143,9 @@ footer nav {
 }
 
 .footer {
+    border-left: solid white 3px;
+    border-right: solid white 3px;
+    border-bottom: solid white 3px;
     background-color: #1d6770;
     padding-bottom: 15px;
     padding-top: 5px;
@@ -171,5 +177,7 @@ footer nav {
     cursor: pointer;
     transform: scale(1.2);
 }
+
+
 
 /* FOOTER STYLES ENDS */
